@@ -3,7 +3,7 @@ class Article < ApplicationRecord
     validates :body, presence: true, length: { minimum: 10 }
     
     def self.processData(article_id,action)
-        return  unless ["activate", "deactive"].include?(action)
+       # return  unless ["activate", "deactive"].include?(action)
         Article.send(action, article_id)
     end
 
