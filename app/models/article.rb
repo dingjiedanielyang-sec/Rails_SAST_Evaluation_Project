@@ -4,7 +4,7 @@ class Article < ApplicationRecord
     
     def self.processData(article_id,action)
         return  unless ["activate", "deactive"].include?(action)
-        send(action, article_id)
+        Article.send(action, article_id)
     end
 
     def self.activate(article_id)
