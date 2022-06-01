@@ -30,3 +30,6 @@ const sample_config = {
     "eventType": "AwsConsoleSignIn",
     "recipientAccountId": "123456789012"
 }
+
+const ACCESS_KEY_ID = '1234567890abcdef1234567890abcdef'
+const SECRET_ACCESS_KEY = '1234567890abcdef1234567890abcdef1234567890abcdef'
